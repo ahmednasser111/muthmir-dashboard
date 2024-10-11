@@ -1,6 +1,10 @@
-# Sensor Data Visualization App
+# [Sensor Data Visualization App](https://muthmir-30144.web.app/)
 
 A React-based web application for visualizing sensor data fetched from Firebase Firestore.
+
+## Live Demo
+
+Visit the live application: [https://muthmir-30144.web.app/](https://muthmir-30144.web.app/)
 
 ## Features
 
@@ -16,37 +20,22 @@ A React-based web application for visualizing sensor data fetched from Firebase 
 - **Frontend**: React with TypeScript
 - **Routing**: React Router
 - **Database**: Firebase Firestore
+- **Hosting**: Firebase Hosting
 - **Styling**: Tailwind CSS
 - **Build Tool**: (Presumed to be Vite or Create React App)
 
-## Getting Started
+## Project Structure
 
-To get a local copy up and running, follow these steps:
-
-1. Clone the repository:
-
-   ```
-   git clone [your-repo-url]
-   ```
-
-2. Install dependencies:
-
-   ```
-   npm install
-   ```
-
-3. Set up Firebase:
-
-   - Create a Firebase project and set up Firestore.
-   - Add your Firebase configuration to `src/config/firebase.ts`.
-
-4. Run the development server:
-
-   ```
-   npm run dev
-   ```
-
-5. Open your browser and navigate to `http://localhost:3000` (or the port specified in your terminal).
+- `src/`
+  - `components/`
+    - `Home.tsx`: Displays the latest readings from all sensors.
+    - `SensorPage.tsx`: Shows detailed historical data for a specific sensor.
+  - `config/`
+    - `firebase.ts`: Firebase configuration and initialization.
+  - `interfaces/`
+    - `index.ts`: TypeScript interfaces for sensor data.
+  - `functions/`
+    - `index.ts`: Utility functions like `formatTime`.
 
 ## Usage
 
@@ -54,17 +43,9 @@ To get a local copy up and running, follow these steps:
 - Click on a sensor card to view its detailed historical data.
 - The sensor detail page shows a table of all readings for that sensor type.
 
-## Data Structure
-
-The application expects data in Firestore to be structured as follows:
-
-- Collection: `y{YYYY}m{MM}d{DD}` (e.g., `y2023m05d15`)
-  - Documents: Named after sensor types
-    - Fields: Timestamps as keys, sensor readings as values
-
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a pull request.
+Contributions are welcome! Please feel free to submit a pull request to the [GitHub repository](https://github.com/ahmednasser111/muthmir-dashboard).
 
 ## License
 
@@ -72,6 +53,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-- Firebase team for providing a robust backend solution.
+- Firebase team for providing a robust backend solution and hosting platform.
 - Tailwind CSS for rapid UI development.
 - React community for excellent documentation and support.
