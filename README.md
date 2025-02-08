@@ -24,18 +24,6 @@ Visit the live application: [https://muthmir-30144.web.app/](https://muthmir-301
 - **Styling**: Tailwind CSS
 - **Build Tool**: (Presumed to be Vite or Create React App)
 
-## Project Structure
-
-- `src/`
-  - `components/`
-    - `Home.tsx`: Displays the latest readings from all sensors.
-    - `SensorPage.tsx`: Shows detailed historical data for a specific sensor.
-  - `config/`
-    - `firebase.ts`: Firebase configuration and initialization.
-  - `interfaces/`
-    - `index.ts`: TypeScript interfaces for sensor data.
-  - `functions/`
-    - `index.ts`: Utility functions like `formatTime`.
 
 ## Usage
 
